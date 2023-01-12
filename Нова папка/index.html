@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/22f442312a.js" crossorigin="anonymous"></script>
+    <title>Site</title>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="image2.jpg" alt="company logo">
+      <h4><a href="index.html"> Кафе & книжарница</a></h4>
+      <h2>Chills</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html?category=cafe">Кафе</a></li>
+          <li><a href="index.html?category=books">Книги</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <aside>
+      <p>Популярни книги</p>
+      <a href="">
+      <img class="imgA" src="book7.jpg" alt="">
+    </a>
+      <a href="">
+        <img class="imgA" src="book8.jpg" alt="">
+      </a>
+    <a href="">
+      <img class="imgA" src="book9.jpg" alt="">
+    </a></aside>
+    <section>
+      <i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi rem ipsum, impedit blanditiis aut sit quo praesentium nisi animi voluptate error voluptatibus id omnis explicabo sed ab est doloremque optio nam adipisci fugiat! A fugiat accusantium sit ad quas perferendis voluptatibus totam tempora dolor temporibus, odit, sint facilis? Distinctio, sit illum possimus pariatur magni aspernatur dolore aliquam molestiae delectus dolores neque non voluptate aperiam debitis. Et odit mollitia corrupti possimus temporibus praesentium quo ut? Voluptas eius mollitia quo officiis quos, laboriosam aliquam totam nobis, commodi est provident officia modi enim eaque aperiam, maxime architecto quia atque perspiciatis? At, aliquam sunt?</i>
+    </section>
+    <div id="grid">
+      <div class="grid-item">
+        <img src="book1.jpg" alt="">
+        <div id="author">Джулия Куин</div> 
+        <div id="book">Бриджъртън: Очарователен негодник</div>
+      </div>
+
+      <div class="grid-item">
+        <img src="book2.jpg" alt="">
+        <div id="author">Ивайло Кунев</div>
+        <div id="book">Лидерите: Забравените истории на България</div>
+      </div>
+
+      <div class="grid-item">
+        <img src="book3.jpg" alt="">
+        <div id="author">Дженифър Сейнт</div>
+        <div id="book">Ариадна</div>
+      </div>
+
+      <div class="grid-item">
+        <img src="book4.jpg" alt="">
+        <div id="author">Стивън Кинг</div>
+        <div id="book">Били Съмърс</div>
+      </div>
+
+      <div class="grid-item">
+        <img src="book5.jpg" alt="">
+        <div id="test">
+          <div id="author">Цветелина Владимирова</div>
+          <div id="book">Червенохалата</div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <img src="book6.jpg" alt="">
+        <div id="author">Рик Риърдън</div>
+        <div id="book">Пърси Джаксън и боговете на Олимп: Похитителят на мълнии</div>
+      </div>
+    
+    </div>
+    <form action="" name="myForm" onsubmit="return validateForm()" method="post">
+      <label for="fName">Име</label>
+      <input type="text" name="fName" id="fName" >
+      <label for="lName">Фамилия</label>
+      <input type="text" name="lName" id="lName" >
+      <label for="email">Ймейл</label>
+      <input type="text" name="email" id="email" >
+      <label for="date">Дата на доставка</label>
+      <input type="date" name="date" id="date" >
+      <label for="time">Час за доставка</label>
+      <input type="time" name="time" id="time" >
+      <label for="">Парола</label>
+      <input type="password" name="pass" id="pass" >
+      <label for="">Повтори парола</label>
+      <input type="password" name="repeatPass" id="repeatPass" required>
+      <input type="submit" value="Submit">
+  </form>
+  </main>
+      <footer>
+        <a class="Afoot" href="https://github.com/RabadjiiskiB"><i class="fa-brands fa-github"></i></a>
+        <a class="Afoot" href="https://www.instagram.com/rabadjiiskib/"><i class="fa-brands fa-instagram"></i></a>
+        
+      </footer>
+    <script>
+      var Regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+      function validateForm(){
+          let pass = document.forms["myForm"]["pass"].value;
+          let repeatPass = document.forms["myForm"]["repeatPass"].value;
+          if(pass == repeatPass)
+          {
+            var result = Regex.test(pass);
+            if(result)
+          {
+              alert("true");
+              return true
+          }
+          else{
+              alert("false");
+              return false
+          }
+          }
+          else{
+            alert("Паролите не съвпадат");
+              return false
+          }
+      }
+  </script>
+  </body>
+</html>

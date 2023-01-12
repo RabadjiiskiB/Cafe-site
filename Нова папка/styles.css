@@ -1,0 +1,183 @@
+body{
+  font-size: 1.1em;
+  margin: 0;
+  background-image: url('coffee-bar.jpg');
+}
+header{
+  font-size: 1.3em;
+  background-color: #6e360e;
+  position: relative;
+  height: 140px;
+}
+#logo{
+  height: 100px;
+  width: 100px;
+  background-color: #fff5ee77;
+  border-radius: 50px;
+}
+h2,h4{
+  position: absolute;
+  right: 5px;
+  top: 47px;
+  margin: 0;
+  color: #ffe4e1bd;
+}
+h4{
+  top: 20px;
+}
+nav{
+  position: absolute;
+  display:block;
+  bottom:0;
+  width: 100%;
+  background-color: #6e6e00;
+  text-align: right;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+li{
+  display:inline;
+  padding:10px;
+}
+li a{
+  border-radius: 3px;
+}
+li a:hover{
+  box-shadow: 10px 5px 5px rgba(24, 24, 24, 0.2);
+  background-color: #44440180; 
+}
+aside {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+aside {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+aside a {
+  display: inline;
+  color: black;
+  text-decoration: none;
+}
+aside a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+aside a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.imgA{
+  margin: 10px;
+  height:100px;
+  width: 70px;
+}
+section{
+  margin:10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+.grid-item{
+  margin:10px;
+  text-align: center;
+  word-wrap: normal;
+  background-color: rgba(250, 235, 215, 0.829);
+}
+img
+{
+  margin:5px;
+  margin-top: 5px;
+  transform: scale(1.01);
+  max-width: 100%;
+  height: 9.5em;
+}
+#author{
+  color:rgb(87, 87, 87);
+  margin-bottom: 5px;
+}
+#book{
+  padding-bottom: 2px;
+}
+form{
+  background-color: rgba(201, 182, 155, 0.822);
+  border-radius: 3px;
+  margin:20px;
+  padding: 5px;
+}
+input{
+  left:17%;
+  display: block;
+  margin-bottom:5px;
+}
+input[type=text]{
+  width: 93%;
+  padding:5px;
+}
+input[type=submit]:hover
+{
+  background-color: #04AA6D;
+}
+/* footer */
+footer{
+  margin-top: 10px;
+  padding-top: 10px;
+  bottom:0;
+  background-color: #6e6e00;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+.Afoot:hover{
+  color:#018051;
+}
+@media only screen and (min-width: 425px)
+{
+  img{
+    height: 13em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body{
+    font-size: 1.3em;
+  }
+  #grid{
+    grid-template-columns: 33% 33% 33%;
+  }
+  aside {
+    float:right;
+    height: 300px;
+    text-align: center;
+    width: 100px;
+    font-size: 0.8em;
+  }
+  aside a{
+    display: block;
+  }
+  img{
+    height:14em;
+  }
+  form{
+    width: 60%;
+    margin:auto;
+  }
+  }
+@media only screen and (min-width: 1440px)
+{
+  body{
+    font-size: 1.7em;
+  }
+  img{
+    height:18em;
+  }
+}
